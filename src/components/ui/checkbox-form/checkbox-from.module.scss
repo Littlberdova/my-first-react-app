@@ -1,0 +1,114 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.wrapper {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    border-top: 1px solid #E4E7EB;
+    border-bottom: 1px solid #E4E7EB;
+}
+
+.header {
+    margin: 0;
+    margin-left: 24px;
+    margin-bottom: 24px;
+    color: #3A3B3F;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.list li {
+    padding-left: 27px;
+    position: relative;
+
+    &:not(:last-child) {
+        margin-bottom: 16px;
+    }
+}
+
+.conditionContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.mark {
+    &::before {
+        position: absolute;
+        content: "";
+        width: 18px;
+        height: 18px;
+        background-color: transparent;
+        border-radius: 4px;
+        border: 1px solid #425A70;
+        box-sizing: border-box;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+    }
+}
+
+.name {
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.note {
+    color: rgba(102, 120, 138, 1);
+    font-size: 12px;
+    line-height: 14px;
+}
+
+.input {
+    display: none;
+}
+
+.label {
+    cursor: pointer;
+}
+
+.input[type='checkbox']:checked ~ .label .mark::after {
+    position: absolute;
+    content: "";
+    background-image: url("../../../assets/icons/check.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 12px;
+    height: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 4px;
+}
+
+.input[type='checkbox']:checked ~ .label .mark::before {
+    background-color: #1665D8;
+    border: none;
+}
+
+.buttonContainer {
+    padding: 24px;
+}
+
+@media (max-width: 767px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .name {
+        font-size: 14px;
+        line-height: 22px;
+    }
+}

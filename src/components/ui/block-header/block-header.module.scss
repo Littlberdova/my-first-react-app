@@ -1,0 +1,32 @@
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 26px;
+    padding-bottom: 26px;
+    align-items: center;
+}
+
+.title {
+    margin: 0;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    margin-right: 16px;
+    color: #3A3B3F;
+}
+
+.description {
+    margin: 0;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    color: #66788A;
+}
+
+@media (max-width: 767px) {
+    .title {
+        margin-bottom: 10px;
+    }
+}

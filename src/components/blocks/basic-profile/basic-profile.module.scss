@@ -1,0 +1,44 @@
+.wrapper {
+    width: auto;
+    background-color: #FFFFFF;
+    border: 1px solid rgba(63, 63, 68, 0.005);
+    box-shadow: 0px 1px 0px rgba(63, 63, 68, 0.05), 0px 1px 3px rgba(63, 63, 68, 0.15);
+    border-radius: 4px;
+    margin-bottom: 24px;
+}
+
+.wrapper button {
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-family: "Roboto", Arial, sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    background-color: #1665D8;
+    border: none;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.12), 0px 1px 3px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 17px;
+    padding-right: 17px;
+
+    &:hover {
+        opacity: 0.5;
+    }
+
+    &:focus-visible {
+        opacity: 0.5;
+        outline: none;
+    }
+
+    &:active {
+        opacity: 0.3;
+    }
+}
+
+@media (max-width: 1023px) {
+    .wrapper {
+        width: auto;
+    }
+}

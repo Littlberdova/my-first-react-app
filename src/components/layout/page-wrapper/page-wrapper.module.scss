@@ -1,0 +1,16 @@
+.main {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+}
+
+.hidden {
+    display: none;
+}
+
+@media (max-width: 767px) {
+    .main {
+        display: flex;
+        flex-direction: column;
+        justify-content: stretch;
+    }
+}
